@@ -14,6 +14,12 @@
 
 </head>
 <body>
-	<main class="main" id="main"></main>
+	<main class="main" id="main">
+    <div class="aviso">
+      <h1>Preparando Sitio Web</h1>
+
+      <footer>David E Luna M</footer>
+    </div>
+  </main>
 </body>
 </html>

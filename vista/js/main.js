@@ -17,17 +17,5 @@ const atributo = {
 }
 
 main.onclick = () => {
-  let cabecera = [];
-  let n = 1;
-
-  atributo.textContent = n++;
-  cabecera[n] = header.create( atributo );
-
-  cabecera.forEach( ( objeto ) => {
-    main.appendChild( objeto );
-  });
-
-  return () => {
-    n++;
-  }
+  
 }

@@ -139,4 +139,23 @@ pre, code {
   border-bottom: #a1daff;
 }
 
+.aviso {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  font-variant: small-caps;
+  font-size: 2rem;
+  color: #0080d4;
+}
+.aviso footer {
+  border-top: 1px solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 128, 212, 0.06);
+}
+
 /*# sourceMappingURL=componentes.css.map */
