@@ -1,0 +1,10 @@
+.main {
+  margin: 0 auto;
+  min-height: $height;
+}
+
+// HEADER:
+.header {
+  min-height: 50px;
+  border-bottom: lighten($color-base, 40);
+}

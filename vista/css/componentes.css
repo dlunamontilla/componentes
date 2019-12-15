@@ -1,0 +1,142 @@
+::-moz-focus-inner {
+  border: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif, arial;
+  font-size: 1rem;
+  color: #606060;
+  background-color: white;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #0080d4;
+}
+a:not([class]):hover {
+  text-decoration: underline;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.width {
+  width: 100%;
+}
+
+.max--width {
+  width: 1200px;
+}
+
+.min--height {
+  min-height: 100vh;
+}
+
+hr {
+  margin: 20px auto 30px;
+  border: 0;
+  border-bottom: 1px solid #6ec6ff;
+}
+
+pre, code {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  background-color: #f3faff;
+  color: #0080d4;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 10px;
+  overflow: auto;
+  font-variant: normal;
+}
+
+.viewport--width {
+  min-width: 100%;
+}
+.viewport--height {
+  min-height: 100vh;
+}
+
+.text--small {
+  font-size: 0.8em;
+}
+.text--big {
+  font-size: 1.2em;
+}
+.text--variant {
+  font-variant: small-caps;
+}
+.text--justify {
+  text-align: justify;
+}
+.text--left {
+  text-align: left;
+}
+.text--center {
+  text-align: center;
+}
+.text--right {
+  text-align: right;
+}
+
+.default, .predeterminado {
+  width: calc(100% - 10px);
+  max-width: 1200px;
+}
+.default:not(hr), .predeterminado:not(hr) {
+  margin: 0 auto;
+}
+
+.line--default, .line--predeterminado {
+  margin: 20px auto;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid;
+  height: 0;
+}
+
+.copyright {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.developer {
+  position: relative;
+  min-height: 30px;
+}
+.developer--link {
+  text-decoration: none;
+  color: #a1daff;
+  outline: medium none;
+}
+.developer--link:hover {
+  text-decoration: underline;
+}
+
+.main {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.header {
+  min-height: 50px;
+  border-bottom: #a1daff;
+}
+
+/*# sourceMappingURL=componentes.css.map */
