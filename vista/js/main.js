@@ -1,10 +1,6 @@
-import { formulario } from "./componentes/forms.js";
-import { header as _header } from "./componentes/header.js";
+import { elemento as _elemento } from "./componentes/elemento.js";
 
-let objeto = new formulario();
-let header = new _header();
-
-objeto.contacto();
+let elemento = new _elemento();
 
 const atributo = {
   className: "header",

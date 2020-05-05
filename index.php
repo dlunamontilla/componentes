@@ -15,10 +15,10 @@
 </head>
 <body>
 	<main class="main" id="main">
-    <div class="aviso">
+    <div class="aviso" id="aviso">
       <h1>Preparando Sitio Web</h1>
 
-      <footer>David E Luna M</footer>
+      <footer id="footer">David E Luna M</footer>
     </div>
   </main>
 </body>
