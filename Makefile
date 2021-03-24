@@ -1,9 +1,15 @@
-CC = scss
-CFLAGS = -w -t expanded
-RUTAS = recursos/activos/sass:vista/css
+TRANSPILADOR = scss
+PARAMETROS = -w -t expanded
+RUTA = recursos/activos/sass:vista/css
 
 main:
-	${CC} ${CFLAGS} ${RUTAS}
+	${TRANSPILADOR} ${PARAMETROS} ${RUTA}
 
-html:
-	php index.php > index.html
+server:
+	php -S localhost:1100
+
+all:
+	${TRANSPILADOR} ${PARAMETROS} ${RUTA} & php -S localhost:1100
+
+kill:
+	killall -9 scss

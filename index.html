@@ -1,25 +1,61 @@
 <!DOCTYPE html>
-<html lang="es-VE">
+<html lang="es-VE" prefix="og: https://ogp.me/ns#">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Componentes - Frontend</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Componentes Web</title>
 
-  <link rel="stylesheet" href="vista/css/componentes.css">
-  <link rel="icon" href="vista/images/favicon.png" type="image/png">
+  <!-- Protocolo OpenGraph -->
+  <meta property="og:title" content="Componentes Web" />
+  <meta property="og:type" content="website" />
 
-  <!-- script -->
-  <script src="vista/js/main.js" async type="module"></script>
+  <!--
+  <meta property="og:url" content="https://ejemplo.com/">
+  <meta property="og:image" content="https://ejemplo.com/imagen.jpeg" />
+  <meta property="og:video" content="https://example.com/video" />
+  -->
 
+  <!-- Favicon -->
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <!-- Fuentes tipográficas -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  -->
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="vista/css/style.css" />
+
+  <!-- JavaScript -->
+  <script src="app/js/main.js" type="module" defer></script>
 </head>
-<body>
-	<main class="main" id="main">
-    <div class="aviso">
-      <h1>Preparando Sitio Web</h1>
 
-      <footer>David E Luna M</footer>
+<body>
+  <main id="app">
+
+    <div class="dl-field" data-field="">
+      <label for="opciones" class="dl-field__inner dl-field__inner--label">Ingrese un nivel:</label>
+
+      <div id="datalista" class="list" data-list="">
+        <input class="list__inner list__inner--text" type="text" id="opciones2" name="opciones2" list="options-list"
+          placeholder="Enter a tier">
+
+        <!-- Datalist in textbox -->
+        <datalist id="options-list-2">
+          <option value="1">Ciencia de datos</option>
+          <option value="2">Realizando pruebas de apilamiento</option>
+          <option value="3">Otro elemento de la lista</option>
+          <option value="4">Componente Web</option>
+          <option value="5">Realizando pruebas</option>
+        </datalist>
+
+        <i class="fa fa-plus list__inner list__inner--icon" data-button=""></i>
+      </div>
     </div>
+
   </main>
 </body>
+
 </html>

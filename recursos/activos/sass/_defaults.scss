@@ -1,9 +1,12 @@
+// Fuentes tipográficas importadas de Google:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 // VALORES PREDETERMINADO:
 // Colores:
 $color-base: #0080d4 !default;
 
 // Proporciones:
-$width: 100% !default;
+$width: calc(100% - 20px) !default;
 $min-width: 100% !default;
 $max-width: 1200px !default;
 
@@ -13,17 +16,16 @@ $min-height: 100vh !default;
   border: 0;
 }
 
+:root {
+  font-family: 'Roboto', sans-serif;
+}
+
 html, body {
   margin: 0;
   padding: 0;
 
-  font: {
-    family: "Open Sans", sans-serif, arial;
-    size: 1rem;
-  }
-
-  color: #606060;
-  background-color: lighten($color-base, 65);
+  color: white;
+  background-color: gray;
 }
 
 body {
@@ -173,5 +175,31 @@ pre, code {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.padding {
+  --padding: 5px;
+
+  &--left {
+    padding-left: var(--padding);
+  }
+
+  &--right {
+    padding-right: var(--padding);
+  }
+
+  &--horizontal {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+  }
+
+  &--vertical {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+  }
+
+  &--all {
+    padding: var(--padding);
   }
 }
