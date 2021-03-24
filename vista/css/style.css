@@ -468,7 +468,7 @@ pre, code {
   --field-separador-color: rgba(255, 255, 255, 0.1);
   --field-border-color: rgba(255, 255, 255, 0.3);
   --field-max-width: 600px;
-  --field-color-icon: #00426e;
+  --field-color-icon: white;
 }
 
 main {
