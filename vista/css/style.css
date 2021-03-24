@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+::-moz-focus-inner {
+  border: 0;
+}
+
+:root {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #606060;
+  background-color: #f1f1fa;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #2d2b74;
+}
+a:not([class]):hover {
+  text-decoration: underline;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.width {
+  width: calc(100% - 20px);
+}
+
+.max--width {
+  width: 1200px;
+}
+
+.min--height {
+  min-height: 100vh;
+}
+
+hr {
+  margin: 20px auto 30px;
+  border: 0;
+  border-bottom: 1px solid #716fc9;
+}
+
+pre, code {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  background-color: #d0cfed;
+  color: #2d2b74;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 10px;
+  overflow: auto;
+  font-variant: normal;
+}
+
+.viewport--width {
+  min-width: 100%;
+}
+.viewport--height {
+  min-height: 100vh;
+}
+
+.text--small {
+  font-size: 0.8em;
+}
+.text--big {
+  font-size: 1.2em;
+}
+.text--variant {
+  font-variant: small-caps;
+}
+.text--justify {
+  text-align: justify;
+}
+.text--left {
+  text-align: left;
+}
+.text--center {
+  text-align: center;
+}
+.text--right {
+  text-align: right;
+}
+
+.default, .predeterminado {
+  width: calc(calc(100% - 20px) - 10px);
+  max-width: 1200px;
+}
+.default:not(hr), .predeterminado:not(hr) {
+  margin: 0 auto;
+}
+
+.line--default, .line--predeterminado {
+  margin: 20px auto;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid;
+  height: 0;
+}
+
+.copyright {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.developer {
+  position: relative;
+  min-height: 30px;
+}
+.developer--link {
+  text-decoration: none;
+  color: #a1daff;
+  outline: medium none;
+}
+.developer--link:hover {
+  text-decoration: underline;
+}
+
+.padding {
+  --padding: 5px;
+}
+.padding--left {
+  padding-left: var(--padding);
+}
+.padding--right {
+  padding-right: var(--padding);
+}
+.padding--horizontal {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+.padding--vertical {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+.padding--all {
+  padding: var(--padding);
+}
+
+.frontal {
+  --color: #4d4d4d;
+  color: var(--color);
+}
+.frontal, .frontal path {
+  transition: 300ms ease;
+}
+.frontal path {
+  fill: var(--color);
+}
+.frontal--base, .frontal--base-hover:hover {
+  --color: #2d2b74;
+}
+.frontal--secundario, .frontal--secundario-hover:hover {
+  --color: #b22234;
+}
+.frontal--whatsapp, .frontal--whatsapp-hover:hover {
+  --color: #00e676;
+}
+.frontal--whatsapp path, .frontal--whatsapp-hover:hover path {
+  fill: var(--color);
+}
+.frontal--facebook, .frontal--facebook-hover:hover {
+  --color: #1877f2;
+}
+.frontal--instagram, .frontal--instagram-hover:hover {
+  --color: #c82767;
+}
+.frontal--twitter, .frontal--twitter-hover:hover {
+  --color: #1da1f2;
+}
+.frontal--youtube, .frontal--youtube-hover:hover {
+  --color: #ff0000;
+}
+.frontal--pinterest, .frontal--pinterest-hover:hover {
+  --color: #cb2027;
+}
+.frontal--linkedin, .frontal--linkedin-hover:hover {
+  --color: #0b66c3;
+}
+.frontal--skype, .frontal--skype-hover:hover {
+  --color: #00aff0;
+}
+
+.fondo {
+  --color: #4d4d4d;
+  transition: 300ms ease;
+  background-color: var(--color);
+  fill: var(--color);
+}
+.fondo--base, .fondo--base-hover:hover {
+  --color: #2d2b74;
+}
+.fondo--secundario, .fondo--secundario-hover:hover {
+  --color: #b22234;
+}
+.fondo--whatsapp, .fondo--whatsapp-hover:hover {
+  --color: #00e676;
+}
+.fondo--facebook, .fondo--facebook-hover:hover {
+  --color: #1877f2;
+}
+.fondo--instagram, .fondo--instagram-hover:hover {
+  --color: #c82767;
+}
+.fondo--twitter, .fondo--twitter-hover:hover {
+  --color: #1da1f2;
+}
+.fondo--youtube, .fondo--youtube-hover:hover {
+  --color: #ff0000;
+}
+.fondo--pinterest, .fondo--pinterest-hover:hover {
+  --color: #cb2027;
+}
+.fondo--linkedin, .fondo--linkedin-hover:hover {
+  --color: #0b66c3;
+}
+.fondo--skype, .fondo--skype-hover:hover {
+  --color: #00aff0;
+}
+.fondo--blanco, .fondo--blanco-hover:hover {
+  --color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
