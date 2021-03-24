@@ -171,7 +171,7 @@ datalist {
   transition: 300ms ease;
   outline: medium none;
   color: var(--field-color);
-  border-left: 3px solid rgba(var(--field-color), 0.3);
+  border-left: 3px solid var(--field-border-color);
 }
 .datalist__item::before {
   content: "";
@@ -453,7 +453,7 @@ pre, code {
 }
 
 .dl-field {
-  background-color: #00426e;
+  background-color: #121830;
   padding: 10px;
   --padding: 4px;
   --display: none;
@@ -462,9 +462,9 @@ pre, code {
   --field-color-focus: rgba(255, 255, 255, 0.6);
   --field-color-coincidence: #ff8533;
   --field-text-color: rgba(255, 255, 255, 0.7);
-  --field-fondo: #0061a1;
+  --field-fondo: #202b55;
   --field-fondo-hover: rgba(0, 0, 0, 0.2);
-  --field-fondo-focus: rgba(0, 5, 8, 0.1);
+  --field-fondo-focus: rgba(0, 0, 0, 0.1);
   --field-separador-color: rgba(255, 255, 255, 0.1);
   --field-border-color: rgba(255, 255, 255, 0.3);
   --field-max-width: 600px;

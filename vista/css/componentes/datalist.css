@@ -170,7 +170,7 @@ datalist {
   transition: 300ms ease;
   outline: medium none;
   color: var(--field-color);
-  border-left: 3px solid rgba(var(--field-color), 0.3);
+  border-left: 3px solid var(--field-border-color);
 }
 .datalist__item::before {
   content: "";
