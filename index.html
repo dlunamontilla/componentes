@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es-VE" prefix="og: https://ogp.me/ns#">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Título del proyecto</title>
+  <title>Componentes Web</title>
 
   <!-- Protocolo OpenGraph -->
-  <!--
-  <meta property="og:title" content="Título de la página" />
+  <meta property="og:title" content="Componentes Web" />
   <meta property="og:type" content="website" />
+
+  <!--
   <meta property="og:url" content="https://ejemplo.com/">
   <meta property="og:image" content="https://ejemplo.com/imagen.jpeg" />
   <meta property="og:video" content="https://example.com/video" />
@@ -21,29 +23,39 @@
   <!-- Fuentes tipográficas -->
   <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  -->
 
-  <!-- Bootstrap CDN CSS -->
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
-
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="vista/css/style.css" /> 
-
-  <!-- jQuery -->
-  <!--
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	-->
-
-	<!-- JS, Popper.js, and jQuery -->
-	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+  <link rel="stylesheet" href="vista/css/style.css" />
 
   <!-- JavaScript -->
-  <script src="app/js/main.js" defer></script>
+  <script src="app/js/main.js" type="module" defer></script>
 </head>
+
 <body>
   <main id="app">
-    <!-- Escriba a aquí su código -->
+
+    <div class="dl-field" data-field="">
+      <label for="opciones" class="dl-field__inner dl-field__inner--label">Ingrese un nivel:</label>
+
+      <div id="datalista" class="list" data-list="">
+        <input class="list__inner list__inner--text" type="text" id="opciones2" name="opciones2" list="options-list"
+          placeholder="Enter a tier">
+
+        <!-- Datalist in textbox -->
+        <datalist id="options-list-2">
+          <option value="1">Ciencia de datos</option>
+          <option value="2">Realizando pruebas de apilamiento</option>
+          <option value="3">Otro elemento de la lista</option>
+          <option value="4">Componente Web</option>
+          <option value="5">Realizando pruebas</option>
+        </datalist>
+
+        <i class="fa fa-plus list__inner list__inner--icon" data-button=""></i>
+      </div>
+    </div>
+
   </main>
 </body>
+
 </html>

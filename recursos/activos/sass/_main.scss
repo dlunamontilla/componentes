@@ -1,0 +1,40 @@
+// Personalización:
+
+$base: darken(#0080d4, 20);
+
+.dl-field {
+    background-color: $base;
+    padding: 10px;
+    
+    --padding: 4px;
+    --display: none;
+
+    // Colores frontales:
+    --field-color: white;
+    --field-color-hover: #0dd;
+    --field-color-focus: #{rgba(white, 0.6)};
+    --field-color-coincidence: #{lighten(#ff6600, 10)};
+    --field-text-color: #{rgba(white, 0.7)};
+
+    // Colores de fondo:
+    --field-fondo: #{lighten($base, 10)};
+    --field-fondo-hover: #{rgba(black, 0.2)};
+    --field-fondo-focus: #{rgba(darken($base, 20), 0.1)};
+
+    // Colores de bordes:
+    --field-separador-color: #{rgba(white, 0.1)};
+    --field-border-color: #{rgba(white, 0.3)};
+
+    // Anchura máxima:
+    --field-max-width: 600px;
+
+    // Color de icono / Color icon
+    --field-color-icon: #{$base};
+}
+
+main {
+    margin: 0 auto;
+    width: $width;
+    max-width: max-width;
+    padding: 10px;
+}
