@@ -453,7 +453,7 @@ pre, code {
 }
 
 .dl-field {
-  background-color: #121830;
+  background-color: #171d23;
   padding: 10px;
   --padding: 4px;
   --display: none;
@@ -462,7 +462,7 @@ pre, code {
   --field-color-focus: rgba(255, 255, 255, 0.6);
   --field-color-coincidence: #ff8533;
   --field-text-color: rgba(255, 255, 255, 0.7);
-  --field-fondo: #202b55;
+  --field-fondo: #2c3741;
   --field-fondo-hover: rgba(0, 0, 0, 0.2);
   --field-fondo-focus: rgba(0, 0, 0, 0.1);
   --field-separador-color: rgba(255, 255, 255, 0.1);
